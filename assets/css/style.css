@@ -1,0 +1,10 @@
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+
+p {
+line-height: 150%;
+padding: 10px;
+}
