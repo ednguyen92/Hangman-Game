@@ -2,26 +2,43 @@
 
 <html>
 <head>
-    <title>Psychic Game</title>
+    <title>Pokemon Hangman</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-        <div id="game">
-            <header><p>
-                <h1>The Psychic Game</h1></p>
-                <h3>
-                        <p>Guess what letter I'm thinking of</p>
-                </h3>
-            </header>
-    
-        <div class="wins">Wins: 0</div>
-        <div class="losses">Losses: 0</div>
-        <div class="guessesLeft">Guesses Left: 9</div>
-        <pdiv class="guessesSofar">Your guesses so far: </div>
-         </div>
+    <div class="headercontainer">
+    <header>
+        <h1><img id="portfolio_image" src="assets/images/pokemon-hangman.png" alt="HTML5 Icon"></h1>
+            <h3>
+                <img id="portfolio_image" src="assets/images/whos_that_pokemon.png" alt="HTML5 Icon">
+            </h3>
+    </header>
+    </div>
+        <div class="container">
+        <div class="poke_game">
+        <h3>Press Any Key to Start!</h3>
+        <div class="panel-body">Wins: <span id="wins">0</span> </div>
+        <div class="panel-body">Losses: <span id="losses">0</span>
+		</div>
+        <div class="panel-body"> 
+            <h2 id="chosenWord" > " " </h2>    
+        </div>
+        <div class="panel-body">Guesses Left: <span id="guessesLeft"></span> </div>
+        <div class="panel-body">Your guesses so far: <span id="guessesMade"></span>
+        </div>
+        <img src="assets/images/its_pikachu.jpg" id="displayPikachu" alt="HTML5 Icon" style="display:none;width:100px;height:100px;"/>
+        <img src="assets/images/its_squirtle.png" id="displaySquirtle" alt="HTML5 Icon" style="display:none;width:100px;height:100px;"/>
+        <img src="assets/images/its_charmander.png" id="displayCharmander" alt="HTML5 Icon" style="display:none;width:100px;height:100px;"/>
+        <img src="assets/images/its_bulbasaur.png" id="displayBulbasaur" alt="HTML5 Icon" style="display:none;width:100px;height:100px;"/>
+        </div>
+        </div>
+
         <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
