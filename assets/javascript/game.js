@@ -66,6 +66,7 @@ function startGame() {
 	document.getElementById("losses").innerHTML = losses;
 	document.getElementById("guessesMade").innerHTML = guessesMade;
     console.log(choosenPokemon);
+    console.log("start game working");
 } 
 
 function restartGame()
@@ -89,7 +90,8 @@ function restartGame()
     "v","w","x",
     "y","z"];
     check=false;
-	startGame();
+    startGame();
+    console.log("reset game working");
 }
 
 function checkLetters(letterGuessed) {
@@ -109,6 +111,7 @@ function checkLetters(letterGuessed) {
                 document.getElementById("chosenWord").innerHTML = underscoresAndSuccesses.join(" ");
                 console.log(underscoresAndSuccesses);
                 console.log(trackPname);
+                console.log("correct Answer working");
             }	
         }
     }else
@@ -123,7 +126,7 @@ function checkLetters(letterGuessed) {
     }
 }
 function checkWinorLoss()
-{
+{   
 	// When number blanks if filled with right words then you win
 	if(correctAnswers == numUnderscores && trackPname == "p i k a c h u" )
 	{
@@ -187,6 +190,7 @@ function checkWinorLoss()
 		//Changes HTML
 		document.getElementById("losses").innerHTML = losses;
         // Call Function to restart game
+        console.log("check loss working");
 		restartGame();
 	}
 }
@@ -208,8 +212,11 @@ document.onkeyup = function(event)
         // Check to see if key guessed has been guessed yet or not
 		if(userGuess === sameLettersCheck[i] && check === true)
 		{
+            var spliceWord = sameLettersCheck.splice(i,1);
+
 			checkLetters(userGuess);
-			checkWinorLoss();
+            checkWinorLoss();
+            console.log("game initiate working");
 		}
 	}		
 		
