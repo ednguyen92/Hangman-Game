@@ -139,7 +139,7 @@ function checkWinorLoss()
         displayPikachu.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
-        document.getElementById("displayPikachu").innerHTML = displayPikachu;
+        // document.getElementById("displayPikachu").innerHTML = displayPikachu;
 		restartGame();
 	} else if (correctAnswers == numUnderscores && trackPname == "s q u i r t l e" ) {
         //Counts Wins 
@@ -151,7 +151,7 @@ function checkWinorLoss()
         displaySquirtle.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
-        document.getElementById("displayPikachu").innerHTML = displaySquirtle;
+        // document.getElementById("displaySquirtle").innerHTML = displaySquirtle;
 		restartGame();
     } else if (correctAnswers == numUnderscores && trackPname == "c h a r m a n d e r" ) {
         //Counts Wins 
@@ -163,7 +163,7 @@ function checkWinorLoss()
         displayCharmander.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
-        document.getElementById("displayPikachu").innerHTML = displayCharmander;
+        // document.getElementById("displayCharmander").innerHTML = displayCharmander;
         // Call Function to restart game
         restartGame();
         
@@ -177,7 +177,7 @@ function checkWinorLoss()
         displayBulbasaur.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
-        document.getElementById("displayPikachu").innerHTML = displayBulbasaur;
+        // document.getElementById("displayBulbasaur").innerHTML = displayBulbasaur;
         // Call Function to restart game
         restartGame();
 
