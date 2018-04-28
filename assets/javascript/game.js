@@ -136,7 +136,7 @@ function checkWinorLoss()
         var audio = new Audio("assets/audio/Pikachu.mp3");
         audio.play();
         // Display Picture when entire word is guessed correctly
-        displayPikachu.style.display = 'block';
+        // displayPikachu.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
         // document.getElementById("displayPikachu").innerHTML = displayPikachu;
@@ -148,7 +148,7 @@ function checkWinorLoss()
         var audio = new Audio("assets/audio/Squirtle.mp3");
         audio.play();
         // Display Picture when entire word is guessed correctly
-        displaySquirtle.style.display = 'block';
+        // displaySquirtle.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
         // document.getElementById("displaySquirtle").innerHTML = displaySquirtle;
@@ -160,7 +160,7 @@ function checkWinorLoss()
         var audio = new Audio("assets/audio/Charmander.m4a");
         audio.play();
         // Display Picture when entire word is guessed correctly
-        displayCharmander.style.display = 'block';
+        // displayCharmander.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
         // document.getElementById("displayCharmander").innerHTML = displayCharmander;
@@ -174,7 +174,7 @@ function checkWinorLoss()
         var audio = new Audio("assets/audio/Bulbasaur.mp3");
         audio.play();
         // Display Picture when entire word is guessed correctly
-        displayBulbasaur.style.display = 'block';
+        // displayBulbasaur.style.display = 'block';
         //Changes HTML
         document.getElementById("wins").innerHTML = wins;
         // document.getElementById("displayBulbasaur").innerHTML = displayBulbasaur;
